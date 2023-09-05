@@ -10,11 +10,13 @@ raw => json
 
 Response:    
 {    "metadata": {        "name": "TestMappe",        "path_lower": "/testmappe",        "path_display": "/TestMappe",        "id": "id:gCTr6onO3SAAAAAAAAAAEQ"    }}    
-statuskode: 200 OK      
+statuskode: 200 OK  
+
 REST Beskrivelse:     
 Endpoint burde hedde: https://api.dropboxapi.com/2/folder/    
 Statuskode skulle have været 201    
-Der burde have været en "Location", url i header og ingen json i body    
+Der burde have været en "Location", "url" i header og     
+ingen json i response body    
 
 
 
