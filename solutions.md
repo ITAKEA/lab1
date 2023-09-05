@@ -66,11 +66,24 @@ Enpoint burde være: https://api.dropboxapi.com/2/files/:id
 Http-verb skal være DELETE    
 Statuskode skulle være 204 no content og ingen json i body    
 
-
-
-
-
 ## Øvelse 7: Søg efter filer
+Endpoint: https://api.dropboxapi.com/2/files/search_v2    
+Http-verb: POST    
+request body:    
+{    "match_field_options": {        "include_highlights": false    },    "options": {        "file_status": "active",        "filename_only": false,        "max_results": 20,        "path": "/"    },    "query": "test"}
+
+response    
+{            "match_type": {                ".tag": "filename"            },            "metadata": {                ".tag": "metadata",                "metadata": {                    ".tag": "folder",                    "id": "id:gCTr6onO3SAAAAAAAAAAFA",                    "name": "test 2",                    "path_display": "/test 2",                    "path_lower": "/test 2"                }            }        },
+
+
+Statuskode: 200 ok    
+
+
+REST beskrivelse:    
+Endpoint burde være: https://api.dropboxapi.com/2/files?search=test     
+Http-verb: GET    
+
+
 
 
 ## Øvelse 8: Flyt en fil
