@@ -29,7 +29,7 @@ Statuskode: 200
 
 REST Beskrivelse:    
 Endpoint burde haveværet: https://api.dropboxapi.com/2/folder/:id    
-Http verb: burde have været GET    
+Http verb: burde have været GET      
 
 
 ## Øvelse 4: Upload en fil
