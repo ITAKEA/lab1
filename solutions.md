@@ -1,5 +1,22 @@
-# Løsninger til opgaverne
+# Løsninger til Lab 1 opgaver
 ## Øvelse 2: Opret en mappe
+Endpoint: https://api.dropboxapi.com/2/files/create_folder_v2    
+HTTP-verbet: POST    
+Beskrivelse:    
+Body:    
+raw => json    
+{    "path": "/TestMappe",    "autorename": false}    
+
+
+Response:    
+{    "metadata": {        "name": "TestMappe",        "path_lower": "/testmappe",        "path_display": "/TestMappe",        "id": "id:gCTr6onO3SAAAAAAAAAAEQ"    }}    
+statuskode: 200 OK      
+REST Beskrivelse:     
+Endpoint burde hedde: https://api.dropboxapi.com/2/folder/    
+Statuskode skulle have været 201    
+Der burde have været en "Location", url i header og ingen json i body    
+
+
 
 ## Øvelse 3: Hent mappe detaljer
 
