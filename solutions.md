@@ -87,6 +87,20 @@ Http-verb: GET
 
 
 ## Øvelse 8: Flyt en fil
+Endpoint: https://api.dropboxapi.com/2/files/move_v2    
+Http-verb: POST    
+Request body: {    "allow_ownership_transfer": false,    "allow_shared_folder": false,    "autorename": false,    "from_path": "/Fil til test.paper",    "to_path": "/Test/algebra"}    
+Response:    
+{    "metadata": {        ".tag": "file",        "name": "algebra",        "path_lower": "/test/algebra",        "path_display": "/Test/algebra",        "id": "id:gCTr6onO3SAAAAAAAAAAEg",        "client_modified": "2023-09-05T15:34:23Z",        "server_modified": "2023-09-05T15:44:37Z",        "rev": "6049e811a4f7f35ba4193",        "size": 200,        "is_downloadable": false,        "export_info": {            "export_as": "html",            "export_options": [                "html",                "markdown"            ]        },        "content_hash": "4647d393a2056d87499c1afa549a6c14d084a6c01a57640029f54b931ac50a1f"    }}
+
+
+Statuskode 200 ok
+
+
+Rest Beskrivelse:    
+Endpoint burde være: https://api.dropboxapi.com/2/files/move     
+Http-verb : maybe put or path    
+
 
 
 ## Øvelse 9: Kopier en fil
