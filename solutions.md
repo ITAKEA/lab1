@@ -104,6 +104,22 @@ Http-verb : maybe put or path
 
 
 ## Øvelse 9: Kopier en fil
+Endpoint: https://api.dropboxapi.com/2/files/copy_v2    
+Http-verb: POST    
+REquest body: {    "allow_ownership_transfer": false,    "allow_shared_folder": false,    "autorename": false,    "from_path": "/test/algebra",    "to_path": "/Homework/algebra"}
+
+
+Respose:    
+{    "metadata": {        ".tag": "file",        "name": "algebra",        "path_lower": "/homework/algebra",        "path_display": "/Homework/algebra",        "id": "id:gCTr6onO3SAAAAAAAAAAFg",        "client_modified": "2023-09-05T15:34:23Z",        "server_modified": "2023-09-05T16:11:40Z",        "rev": "6049ee1d0a34435ba4193",        "size": 200,        "is_downloadable": false,        "export_info": {            "export_as": "html",            "export_options": [                "html",                "markdown"            ]        },        "content_hash": "4647d393a2056d87499c1afa549a6c14d084a6c01a57640029f54b931ac50a1f"    }}
+
+
+Statuskode: 200    
+Rest beskrivelse:    
+Endpoint måske https://api.dropboxapi.com/2/files/copy    
+http-verb måske Put eller patch    
+
+
+
 
 
 ## Øvelse 10: Brug JavaScript's Fetch med Dropbox API
