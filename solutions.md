@@ -13,7 +13,7 @@ Response:
 statuskode: 200 OK  
 
 REST Beskrivelse:     
-Endpoint burde hedde: https://api.dropboxapi.com/2/folder/    
+Endpoint burde hedde: https://api.dropboxapi.com/2/folders/    
 Statuskode skulle have været 201    
 I responset burde der have været en "Location header", og ingen json i response body    
 
@@ -28,7 +28,7 @@ response:
 Statuskode: 200   
 
 REST Beskrivelse:    
-Endpoint burde have været: https://api.dropboxapi.com/2/folder/:id    
+Endpoint burde have været: https://api.dropboxapi.com/2/folders/:id    
 Http verb: burde have været GET      
 
 
@@ -52,6 +52,22 @@ statuskode: 200 OK
 
 
 ## Øvelse 5: Slet en fil
+Endpoint: https://api.dropboxapi.com/2/files/delete_v2    
+Http-verb: POST    
+Request body:     
+{    "path": "/test.svg"}    
+Response body:    
+{    "metadata": {        ".tag": "file",        "name": "test.svg",        "path_lower": "/test.svg",        "path_display": "/test.svg",        "id": "id:gCTr6onO3SAAAAAAAAAAEA",        "client_modified": "2023-09-05T12:56:27Z",        "server_modified": "2023-09-05T12:56:27Z",        "rev": "6049c27b4487f35ba4193",        "size": 720,        "is_downloadable": true,        "content_hash": "dca43c3d03dc4b86b6a8532eaebc65568176da43d574952928214691e20a98da"    }}    
+
+Statuskode: 200  
+
+REST beskrivelse:    
+Enpoint burde være: https://api.dropboxapi.com/2/files/:id    
+Http-verb skal være DELETE    
+Statuskode skulle være 204 no content og ingen json i body    
+
+
+
 
 
 ## Øvelse 7: Søg efter filer
