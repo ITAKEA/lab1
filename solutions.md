@@ -20,6 +20,17 @@ I responset burde der have været en "Location header", og ingen json i response
 
 
 ## Øvelse 3: Hent mappe detaljer
+Endpoint: https://api.dropboxapi.com/2/files/get_metadata    
+Http-verb: POST    
+request body: {    "path": "/TestMappe"}    
+response:     
+{    ".tag": "folder",    "name": "TestMappe",    "path_lower": "/testmappe",    "path_display": "/TestMappe",    "id": "id:gCTr6onO3SAAAAAAAAAADg"}    
+Statuskode: 200   
+
+REST Beskrivelse:    
+Endpoint burde haveværet: https://api.dropboxapi.com/2/folder/:id    
+Http verb: burde have været GET    
+
 
 ## Øvelse 4: Upload en fil
 Endpoint: https://content.dropboxapi.com/2/files/upload    
