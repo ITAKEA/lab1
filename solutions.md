@@ -126,5 +126,7 @@ http-verb måske Put eller patch
 
 
 ## Øvelse 11: Er https://api.dropboxapi.com/2/ Restfull or not?
-
+Api´et bruger POST verbet til alle requests. Det følger ikke REST principperne, og der burde have været brugt GET, DELETE, UPDATE en del steder istedet for POST til alt. 
+De specifikke detaljer om dette har jeg skrevet om i besvarelsen til de specifikke øvelser. 
+Endpoints har generelt ikke en særlig god navngivning. Det skal navngive en resource, altså et Navneord, og ikke som i flere tilfælde en handling (et verbum) som feks. "get_metadata" og "upload"
 
